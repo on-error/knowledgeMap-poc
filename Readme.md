@@ -2,6 +2,9 @@
 
 A beautiful, interactive knowledge map built with React, TypeScript, and D3.js that visualizes chemistry concepts and their relationships. The application features a force-directed graph with zoom/pan capabilities, hover effects, and dynamic node categorization.
 
+![Screen Recording 2025-08-03 at 1 51 16 PM](https://github.com/user-attachments/assets/9e7ef612-ccd9-4c19-a3a0-348b82367d55)
+
+
 ## 🚀 Features
 
 - **Interactive Force-Directed Graph**: Nodes automatically arrange themselves using D3.js force simulation
@@ -84,54 +87,14 @@ kmap-poc/
 
 ### Frontend Environment Variables
 
-Create a `.env` file in the `frontend/` directory:
-
-```env
-# API Configuration
-VITE_API_BASE_URL=http://localhost:3003
-VITE_API_TIMEOUT=10000
-
-# Application Configuration
-VITE_APP_TITLE=Chemistry Knowledge Map
-VITE_APP_VERSION=1.0.0
-
-# Development Configuration
-VITE_DEV_MODE=true
-VITE_ENABLE_LOGGING=true
-
-# Feature Flags
-VITE_ENABLE_ZOOM=true
-VITE_ENABLE_HOVER_EFFECTS=true
-VITE_ENABLE_ANIMATIONS=true
-```
-
 ### Backend Environment Variables (if applicable)
 
 Create a `.env` file in the `backend/` directory:
 
 ```env
 # Server Configuration
-PORT=3003
-NODE_ENV=development
-
-# Database Configuration (if using database)
-DB_HOST=localhost
-DB_PORT=5432
-DB_NAME=knowledge_map
-DB_USER=your_username
-DB_PASSWORD=your_password
-
-# API Configuration
-API_PREFIX=/api
-CORS_ORIGIN=http://localhost:5173
-
-# Security
-JWT_SECRET=your_jwt_secret_here
-JWT_EXPIRES_IN=24h
-
-# Logging
-LOG_LEVEL=info
-LOG_FILE=logs/app.log
+DATABASE_URL=ADD_YOUR_DATABASE_URL_HERE
+GEMINI_API_KEY=ADD_YOUR_GEMINI_API_KEY_HERE
 ```
 
 ## 📦 Available Scripts
@@ -308,7 +271,4 @@ GET /api/get-map/{mapId}
 
 
 #Add this .env in the backend folder
-```
-DATABASE_URL=ADD_YOUR_DATABASE_URL_HERE
-GEMINI_API_KEY=ADD_YOUR_GEMINI_API_KEY_HERE
 ```
