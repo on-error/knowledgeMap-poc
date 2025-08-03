@@ -1,0 +1,121 @@
+.knowledge-map-container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background: #010305;
+  min-height: 100vh;
+}
+
+.knowledge-map-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.knowledge-map-svg {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  position: relative;
+}
+
+.knowledge-map-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.knowledge-map-legend {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #666;
+}
+
+.legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+}
+
+.zoom-instructions {
+  text-align: center;
+  margin: 10px 0;
+  padding: 8px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  border: 1px solid #e9ecef;
+}
+
+.zoom-instructions p {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Zoom controls styling */
+.zoom-controls circle:hover {
+  fill: #f0f0f0;
+  stroke: #999;
+}
+
+.zoom-controls text {
+  pointer-events: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .knowledge-map-container {
+    padding: 10px;
+  }
+  
+  .knowledge-map-wrapper {
+    padding: 15px;
+  }
+  
+  .knowledge-map-title {
+    font-size: 20px;
+  }
+  
+  .knowledge-map-legend {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .zoom-instructions {
+    font-size: 11px;
+  }
+}
+
+/* Simple hover effect for nodes */
+.node-circle {
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+}
+
+.node-circle:hover {
+  opacity: 0.8;
+}
+
+/* Simple link styling */
+.link-line {
+  transition: opacity 0.2s ease;
+} 
